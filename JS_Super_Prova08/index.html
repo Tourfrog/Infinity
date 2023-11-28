@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Conversor de Medidas</h1>
+
+    <div id="divConverter">
+        <label for="">Coloque a distancia em metros: </label>
+        <input type="number" name="" id="inputConverter">
+    </div>
+
+    <section>
+        <label for="medidas">Selecione aqui para qual medida quer converter:</label>
+        <div id="selecaoMedida">
+            <select name="medidas" id="escolhas">
+                <option value="#">Clique aqui para escolher</option>
+                <option value="Jarda">Jarda</option>
+                <option value="Pé">Pé</option>
+                <option value="Polegada">Polegada</option>
+                <option value="Milhas">Milhas</option>
+            </select>
+        </div>
+    </section>
+
+
+    <div id="mostrarResultado">
+        <button type="button" id="buttonConverter">Converter</button>
+        <p id="resultado"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

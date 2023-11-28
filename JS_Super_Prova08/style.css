@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+h1{
+    margin: 25px;
+}
+#divConverter{
+    margin: 25px;
+    font-size: 25px;
+}
+#inputConverter{
+    font-size: 25px;
+}
+section{
+    padding-top: 20px;
+    margin: 43px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#selecaoMedida{
+    display: inline-block;
+    position: relative;
+}
+
+#escolhas{
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+}
+option{
+    font-size: 25px;
+    background-color: #fff;
+    color: #333;
+}
+
+#mostrarResultado{
+    padding: 25px;
+    font-size: 25px;
+}
+#buttonConverter{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
