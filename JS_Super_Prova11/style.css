@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#questao{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#pergunta{
+    font-size: 30px;
+    font-style: italic;
+}
+#escolhas{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 25px;
+}
+button:hover{
+    color: red;
+    background-color: yellow;
+}
