@@ -1,0 +1,42 @@
+Trancrito do MySQL
+
+CREATE DATABASE Registros_Pessoais;
+USE Registros_Pessoais;
+
+CREATE TABLE pessoa(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nome_completo NVARCHAR(200) NOT NULL,
+    idade INT NOT NULL,
+    genero NVARCHAR(50) NOT NULL,
+    nacionalidade NVARCHAR(50) NOT NULL,
+    email NVARCHAR(200) NOT NULL,
+    estado_civil NVARCHAR(50) NOT NULL, 
+    nome_do_PAI NVARCHAR(50) NOT NULL,
+    nome_da_MAE NVARCHAR(50) NOT NULL
+);
+
+INSERT INTO pessoa (nome_completo, idade, genero, nacionalidade, email, estado_civil, nome_do_PAI, nome_da_MAE)
+	VALUES
+		('Alana Alves', 21, 'feminino', 'Americana', 'alana@gmail.com', 'solteira', 'Alex', 'Alicia'),
+        ('Bruna Barros', 32, 'feminino', 'Boliviana', 'bruna@gmail.com', 'casada', 'Breno', 'Barbara'),
+        ('Caio Campos', 43, 'masculino', 'Chileno', 'caio@gmail.com', 'divorciado', 'Cristiano', 'Camila')
+        ;
+		
+
+SELECT id, nome_completo FROM pessoa;
+
+UPDATE pessoa
+	SET nome_completo = 'Debora Dias',
+		idade = 54,
+		nacionalidade = 'Dominicana',
+        email = 'debora@gmail.com',
+        estado_civil = 'viúva',
+        nome_do_PAI = 'Dirceu',
+        nome_da_MAE = 'Donna'
+			WHERE id = 2;
+
+SELECT * FROM pessoa WHERE id = 2;
+
+SELECT * FROM pessoa;
+DELETE FROM pessoa WHERE id = 1;
+SELECT * FROM pessoa;
