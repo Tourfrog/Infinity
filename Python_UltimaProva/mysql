@@ -1,0 +1,12 @@
+Trancrito no MySql
+
+CREATE DATABASE listaDeTarefas;
+USE listaDeTarefas;
+
+CREATE TABLE tarefas(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nomePessoa VARCHAR (50) NOT NULL,
+    descricao VARCHAR (250) NOT NULL,
+    concluido BOOLEAN
+);
+

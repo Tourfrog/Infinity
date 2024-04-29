@@ -1,0 +1,18 @@
+Gerenciador de tarefas
+
+Empresa Ficticia - STARK INDUSTRUIES
+
+1- Adicionar tarefas 
+2- Marcar como concluidas
+3- Excluir tarefas concluidas
+    (Fornecer um botão para excluir a tarefa)
+4- Exibir a lista de tarefas
+    (Tem que mostrar se está concluidas ou não)
+
+5- Salvar e Carregar
+    (o sistema tem que carregar as informações
+     em um banco de dados MySql)
+
+
+a- Usar Tkinter
+b- Usar cores preta, vermelha e branco
